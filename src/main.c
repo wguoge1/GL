@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	int s1=0, n1=3, n2=3, n3=0,b=0 ,c=1 ,s4=0, a=1 ,b1=1;
+	int s1=0, n1=3, n2=3, n3=0,b=0 ,c=1 ,s4=0, a=0 ,b1=1;
 	long unsigned int s2=0;
 	while(n1<36)
 	 {
@@ -26,10 +26,18 @@ int main(void)
 	}
 	while(b1<=20)
 	{
-		if(a%3==0 || a%7==0)
+		if(a%3==0 || b%7==0)
 		{
 			s4= s4+a;
+			a=a+1;
+			b=b+1
+			
 			b1++;
+		}
+		else
+		{
+			a=a+1;
+			b=b+1;
 		}
 		
 	}
